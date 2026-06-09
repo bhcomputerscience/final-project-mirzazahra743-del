@@ -194,7 +194,7 @@ void showBakingExperience() {
     }
   }
   
-  // --- Scaled Sprinkles System ---
+  //Scaled Sprinkles System
   if (currentStep >= 3 && sprinkle > 0) { 
     randomSeed(100); 
     for (int i = 0; i < 45; i++) { // Increased particle quantity for larger bounds
@@ -228,7 +228,7 @@ void showBakingExperience() {
     drawDesignButtons();
   }
 
-  // --- Navigation UI Element Styling ---
+  //Navigation Element Styling
   // MOVE ON Button
   fill(#FFE66D); 
   stroke(0, 50);
@@ -262,6 +262,7 @@ void showBakingExperience() {
   text("START OVER", resetX + resetW/2, resetY + resetH/2);
 }
 
+//this is where the buttons come across and i used a int list, to subject them into one icingsColors
 void drawFrostingButtons() {
   int[] icingColors = { icingOne, icingTwo, icingThree, icingFour, icingFive, icingSix };
 
